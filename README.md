@@ -1,2 +1,0 @@
-# begin-ng
-Begin app
