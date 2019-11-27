@@ -4,7 +4,7 @@ music-ggz
 @static
 
 @http
-
+get /hello
 
 @tables
 data
