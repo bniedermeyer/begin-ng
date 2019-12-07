@@ -436,5 +436,13 @@
     </a>
   </div>
 
-  <app-begin></app-begin>
+  <div class="successful" *ngIf="beginResponse | async as response; else loading">
+    <h1>Message from Begin: {{ response.message }}</h1>
+  </div>
+  <!-- Template for else condition. Will display while making the request to the serverless function -->
+  <ng-template #loading>
+    <div class="loading">
+      <h2>Loading...</h2>
+    </div>
+  </ng-template>
 </div>
