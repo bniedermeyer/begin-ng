@@ -4,10 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BeginComponent } from './begin/begin.component';
 
 @NgModule({
-  declarations: [AppComponent, BeginComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
